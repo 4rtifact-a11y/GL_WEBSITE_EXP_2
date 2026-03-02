@@ -11,8 +11,8 @@ html{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}#b{ba
 <meta name="referrer" content="origin-when-cross-origin">
 <script>!function(){var A=new Image;A.onload=A.onerror=function(){1!=A.height&&document.body.classList.remove("webp")},A.src="data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAD8D+JaQAA3AA/ua1AAA"}();
 </script>
-<link rel="stylesheet" href="css/site.9d9805.css" media="print" onload="this.media='all';this.onload=null;">
-<noscript><link rel="stylesheet" href="css/site.9d9805.css" type="text/css"></noscript>
+<link rel="stylesheet" href="css/site.498bd2.css" media="print" onload="this.media='all';this.onload=null;">
+<noscript><link rel="stylesheet" href="css/site.498bd2.css" type="text/css"></noscript>
 </head>
 <body style="--sw:0px" class="webp" id="b">
 <script>!function(){var t,e,n=document.body,r=("0"===n.style.getPropertyValue("--sw")&&n.style.setProperty("--sw","0px"),document.createElement("P")),i=(r.innerHTML="&nbsp;",r.style.cssText="position:fixed;visibility:hidden;font-size:100px;zoom:1",r.setAttribute("aria-hidden","true"),n.appendChild(r),t=r,function(){var e=Math.trunc(1e4/parseFloat(window.getComputedStyle(t).getPropertyValue("font-size")))/100;e!=n.style.getPropertyValue("--f")&&n.style.setProperty("--f",e)});"ResizeObserver"in window?new ResizeObserver(i).observe(r):"requestAnimationFrame"in window?(e=function(){i(),requestAnimationFrame(e)},requestAnimationFrame(e)):setInterval(i,100)}();</script>
@@ -383,8 +383,7 @@ document.addEventListener("DOMContentLoaded", function() {
         padding: 0;
     }
 
-    /* === LE NOUVEAU POINT D'ANCRAGE === 
-       Il s'enroule autour du bloc en verre et force la forme à rester collée à lui */
+    /* === LE NOUVEAU POINT D'ANCRAGE === */
     .g-link-wrapper .shape-anchor {
         position: relative;
         z-index: 1;
@@ -393,15 +392,15 @@ document.addEventListener("DOMContentLoaded", function() {
     /* === FORMES GÉOMÉTRIQUES PLATES (STYLE MATERIAL 3) === */
     .g-link-wrapper .section-bg-shape {
         position: absolute;
-        z-index: -1; /* Forcé derrière le bloc de verre contenu dans le shape-anchor */
-        pointer-events: auto; /* Permet le clic/hover sur la partie qui dépasse */
+        z-index: -1;
+        pointer-events: auto;
         cursor: pointer;
         opacity: 0.9;
         transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
         transform-origin: center; 
     }
     
-    /* Identité : 4-leaf clover (Quatre ronds) - Centré à gauche du bloc */
+    /* Identité : 4-leaf clover */
     .g-link-wrapper .shape-identite {
         width: 100px; height: 100px;
         background-color: var(--accent-cyan);
@@ -411,7 +410,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     .g-link-wrapper .shape-identite:hover { transform: scale(1.1); }
     
-    /* Print : Arch (Arche adoucie) - Coin en haut à droite */
+    /* Print : Arch */
     .g-link-wrapper .shape-print {
         width: 90px; height: 130px;
         background: var(--accent-purple);
@@ -420,7 +419,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     .g-link-wrapper .shape-print:hover { transform: scale(1.1); }
     
-    /* Digital : Slanted (Carré incliné) - Centré à gauche */
+    /* Digital : Slanted */
     .g-link-wrapper .shape-digital {
         width: 90px; height: 90px;
         background: var(--accent-cyan);
@@ -430,7 +429,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     .g-link-wrapper .shape-digital:hover { transform: skew(-10deg) rotate(-5deg) scale(1.1); }
     
-    /* Motion : Circle (Cercle) - Coin en haut à droite de la 3ème carte */
+    /* Motion : Circle */
     .g-link-wrapper .shape-motion {
         width: 100px; height: 100px;
         background: var(--accent-purple);
@@ -439,7 +438,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     .g-link-wrapper .shape-motion:hover { transform: scale(1.1); }
     
-    /* DAO : Soft burst (Étoile rounded) - Coin en bas à droite */
+    /* DAO : Soft burst */
     .g-link-wrapper .shape-dao {
         width: 110px; height: 110px;
         background-color: var(--accent-cyan);
@@ -449,7 +448,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     .g-link-wrapper .shape-dao:hover { transform: scale(1.1); }
     
-    /* Stratégie : Semicircle (Demi-cercle) - Coin en bas à gauche */
+    /* Stratégie : Semicircle */
     .g-link-wrapper .shape-strategie {
         width: 120px; height: 75px;
         background: var(--accent-purple);
@@ -469,7 +468,7 @@ document.addEventListener("DOMContentLoaded", function() {
         margin: 0 auto;
         padding: 0 5%;
         position: relative; 
-        z-index: 2;
+        z-index: 2; 
     }
 
     .g-link-wrapper section {
@@ -608,22 +607,61 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     .g-link-wrapper .card h3 { font-size: 1.6rem; margin-bottom: 1rem; }
 
-    /* IMAGES */
+    /* === GESTION DES IMAGES ET DES MARGES (CADRE VERT) === */
+    
     .g-link-wrapper .img-placeholder {
         background: linear-gradient(135deg, rgba(0,161,198,0.2) 0%, rgba(0,90,140,0.2) 100%);
         border: 2px dashed rgba(0, 161, 198, 0.4);
         display: flex; align-items: center; justify-content: center;
         color: var(--accent-cyan); font-family: 'Space Grotesk', sans-serif;
-        font-weight: 600; text-align: center; padding: 20px;
+        font-weight: 600; text-align: center;
     }
-    .g-link-wrapper .card-image { padding: 20px; }
-    .g-link-wrapper .card-image .img-wrapper, .g-link-wrapper .feature-large .img-wrapper {
-        border-radius: 16px; overflow: hidden; margin-bottom: 1.5rem; position: relative;
+
+    /* Marge du bloc en verre (Padding de 24px autour de l'image) */
+    .g-link-wrapper .p-2 { 
+        padding: 24px; 
+        display: flex;
+        flex-direction: column;
     }
-    .g-link-wrapper .card-image .img-wrapper { height: 250px; }
-    .g-link-wrapper .feature-large .img-wrapper { height: 450px; width: 100%; }
-    .g-link-wrapper img.real-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
-    .g-link-wrapper .liquid-glass:hover img.real-img { transform: scale(1.08); }
+
+    .g-link-wrapper .card-image { padding: 24px; }
+
+    /* Le conteneur strict qui masque les débordements (Le trait vert sur votre capture) */
+    .g-link-wrapper .card-image .img-wrapper, 
+    .g-link-wrapper .feature-large .img-wrapper,
+    .g-link-wrapper .p-2 .img-wrapper {
+        border-radius: 16px; 
+        overflow: hidden; /* CRUCIAL : Empêche l'image de déborder pendant le zoom ! */
+        position: relative;
+    }
+
+    .g-link-wrapper .card-image .img-wrapper { 
+        height: 250px; 
+        margin-bottom: 1.5rem; 
+    }
+
+    /* Taille des grandes images */
+    .g-link-wrapper .feature-large .img-wrapper,
+    .g-link-wrapper .p-2 .img-wrapper { 
+        height: 100%; 
+        min-height: 400px; 
+        width: 100%; 
+        margin-bottom: 0; 
+    }
+
+    /* L'image elle-même */
+    .g-link-wrapper img.real-img { 
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+        display: block;
+        transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1); 
+    }
+
+    /* L'effet de zoom confiné dans l'enveloppe */
+    .g-link-wrapper .liquid-glass:hover img.real-img { 
+        transform: scale(1.1); /* Grandit à l'intérieur du wrapper sans affecter la marge ! */
+    }
 
     /* BOUTON CONTACT PAR SECTION */
     .g-link-wrapper .section-action {
@@ -701,7 +739,9 @@ document.addEventListener("DOMContentLoaded", function() {
         .g-link-wrapper section { padding: 80px 0 40px 0; }
         .g-link-wrapper .section-header { margin-bottom: 50px; }
         .g-link-wrapper .carousel-slide { padding: 0 2vw; height: 40vh; }
-        .g-link-wrapper .section-bg-shape { display: none; }
+        .g-link-wrapper .p-2 { padding: 15px; } /* Marge réduite sur mobile */
+        .g-link-wrapper .feature-large .img-wrapper,
+        .g-link-wrapper .p-2 .img-wrapper { min-height: 300px; }
     }
 </style>
 
@@ -775,7 +815,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="shape-anchor">
                         <div class="section-bg-shape shape-print"></div>
                         <div class="liquid-glass p-2 floating-elem d-1">
-                            <div class="img-wrapper img-placeholder" style="height: 400px;">
+                            <div class="img-wrapper img-placeholder">
                                 <img src="images/GL_02.png" alt="Packaging 3D" class="real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                                 <span style="display:none;">[Image GL_02.png attendue ici]</span>
                             </div>
@@ -802,7 +842,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="shape-anchor">
                         <div class="section-bg-shape shape-digital"></div>
                         <div class="liquid-glass p-2 floating-elem">
-                            <div class="img-wrapper img-placeholder" style="height: 450px;">
+                            <div class="img-wrapper img-placeholder">
                                 <img src="images/GL_03.png" alt="Web Design UI" class="real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                                 <span style="display:none;">[Image GL_03.png attendue ici]</span>
                             </div>
@@ -890,7 +930,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="shape-anchor" style="order: 2;">
                         <div class="section-bg-shape shape-dao"></div>
                         <div class="liquid-glass p-2 floating-elem d-1">
-                            <div class="img-wrapper img-placeholder" style="height: 450px;">
+                            <div class="img-wrapper img-placeholder">
                                 <img src="images/GL_13.png" alt="Architecture DAO" class="real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                                 <span style="display:none;">[Image GL_13.png attendue ici]</span>
                             </div>
@@ -933,7 +973,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="shape-anchor">
                         <div class="section-bg-shape shape-strategie"></div>
                         <div class="liquid-glass p-2 floating-elem">
-                            <div class="img-wrapper img-placeholder" style="height: 450px;">
+                            <div class="img-wrapper img-placeholder">
                                 <img src="images/GL_14.png" alt="Stratégie" class="real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                                 <span style="display:none;">[Image GL_14.png attendue ici]</span>
                             </div>
