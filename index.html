@@ -11,8 +11,8 @@ html{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}#b{ba
 <meta name="referrer" content="origin-when-cross-origin">
 <script>!function(){var A=new Image;A.onload=A.onerror=function(){1!=A.height&&document.body.classList.remove("webp")},A.src="data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAD8D+JaQAA3AA/ua1AAA"}();
 </script>
-<link rel="stylesheet" href="css/site.65895f.css" media="print" onload="this.media='all';this.onload=null;">
-<noscript><link rel="stylesheet" href="css/site.65895f.css" type="text/css"></noscript>
+<link rel="stylesheet" href="css/site.5f612c.css" media="print" onload="this.media='all';this.onload=null;">
+<noscript><link rel="stylesheet" href="css/site.5f612c.css" type="text/css"></noscript>
 </head>
 <body style="--sw:0px" class="webp" id="b">
 <script>!function(){var t,e,n=document.body,r=("0"===n.style.getPropertyValue("--sw")&&n.style.setProperty("--sw","0px"),document.createElement("P")),i=(r.innerHTML="&nbsp;",r.style.cssText="position:fixed;visibility:hidden;font-size:100px;zoom:1",r.setAttribute("aria-hidden","true"),n.appendChild(r),t=r,function(){var e=Math.trunc(1e4/parseFloat(window.getComputedStyle(t).getPropertyValue("font-size")))/100;e!=n.style.getPropertyValue("--f")&&n.style.setProperty("--f",e)});"ResizeObserver"in window?new ResizeObserver(i).observe(r):"requestAnimationFrame"in window?(e=function(){i(),requestAnimationFrame(e)},requestAnimationFrame(e)):setInterval(i,100)}();</script>
@@ -42,10 +42,10 @@ html{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}#b{ba
 <div class="v7 ps14 s16">
 <div class="v6 ps15 s17 c8 z14">
 <div class="wrapper4">
-<!-- POLICES EXTERNES (Au cas où ce bloc est chargé séparément) -->
+<!-- POLICES EXTERNES -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Pixelify+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
     /* Conteneur principal invisible pour positionner les éléments */
@@ -120,7 +120,7 @@ html{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}#b{ba
         text-decoration: none;
         padding: 12px 28px;
         border-radius: 30px;
-        font-family: 'Space Grotesk', sans-serif;
+        font-family: 'Pixelify Sans', sans-serif;
         font-weight: 700;
         font-size: 0.95rem;
         text-transform: uppercase;
@@ -134,17 +134,20 @@ html{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}#b{ba
         box-shadow: 0 10px 25px rgba(38, 169, 224, 0.3);
     }
 
-    /* Responsive : cacher les liens sur petit écran ou les adapter */
+    /* Responsive : cacher les liens sur petit écran */
     @media (max-width: 992px) {
         .g-nav-pill {
-            display: none; /* Cache le menu principal sur mobile pour l'instant */
+            display: none; /* Cache le menu principal sur mobile */
+        }
+        /* Optionnel: réajuster le bouton sur mobile si besoin */
+        .g-header-wrapper {
+            justify-content: flex-end;
         }
     }
 </style>
 
 <!-- STRUCTURE DU MENU -->
 <header class="g-header-wrapper">
-    
     <!-- Espace invisible à gauche pour équilibrer le centrage -->
     <div style="flex: 1;"></div>
 
@@ -153,6 +156,7 @@ html{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}#b{ba
         <li><a href="#services">Identité</a></li>
         <li><a href="#print">Print</a></li>
         <li><a href="#digital">Digital</a></li>
+        <li><a href="#Dev">Dev</a></li>
         <li><a href="#motion">Motion</a></li>
         <li><a href="#dao">DAO</a></li>
         <li><a href="#strategie">Stratégie</a></li>
@@ -162,7 +166,6 @@ html{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}#b{ba
     <div style="flex: 1; display: flex; justify-content: flex-end;">
         <a href="#contact" class="g-nav-btn">Let's Link</a>
     </div>
-
 </header>
 </div>
 </div>
@@ -346,418 +349,518 @@ document.addEventListener("DOMContentLoaded", function() {
 <div class="btf v4 ps6 s7 c6 z6"></div>
 <div class="btf v1 ps6 s8 c5 z7">
 <div class="wrapper2">
-<!-- 1. POLICES ET ICÔNES EXTERNES -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-<!-- 2. STYLES -->
-<style>
-    /* VARIABLES DE COULEUR */
-    .g-link-wrapper {
-        --bg-dark: #0a131a;
-        --bg-darker: #060b10;
-        --text-main: #e2e8f0;
-        --text-muted: #94a3b8;
-        --accent-cyan: #00A1C6;
-        --accent-purple: #005A8C;
-        --accent-gradient: linear-gradient(135deg, #00A1C6 0%, #005A8C 100%);
-        --glass-bg: rgba(255, 255, 255, 0.04);
-        --glass-border: rgba(255, 255, 255, 0.1);
-        --glass-border-light: rgba(255, 255, 255, 0.25);
-        --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-
-        background-color: transparent;
-        color: var(--text-main);
-        font-family: 'Outfit', sans-serif;
-        position: relative;
-        overflow-x: hidden;
-        width: 100%;
-        text-align: left;
-    }
-
-    .g-link-wrapper * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    /* === LE NOUVEAU POINT D'ANCRAGE === */
-    .g-link-wrapper .shape-anchor {
-        position: relative;
-        z-index: 1;
-        height: 100%; /* Force l'ancrage à s'étirer */
-    }
-
-    /* === FORMES GÉOMÉTRIQUES PLATES (STYLE MATERIAL 3) === */
-    .g-link-wrapper .section-bg-shape {
-        position: absolute;
-        z-index: -1;
-        pointer-events: auto;
-        cursor: pointer;
-        opacity: 0.9;
-        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-        transform-origin: center; 
-    }
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Link - Agence de Communication</title>
     
-    /* Identité : 4-leaf clover */
-    .g-link-wrapper .shape-identite {
-        width: 100px; height: 100px;
-        background-color: var(--accent-cyan);
-        -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='35' cy='35' r='35'/%3E%3Ccircle cx='65' cy='35' r='35'/%3E%3Ccircle cx='35' cy='65' r='35'/%3E%3Ccircle cx='65' cy='65' r='35'/%3E%3C/svg%3E") no-repeat center / contain;
-        mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='35' cy='35' r='35'/%3E%3Ccircle cx='65' cy='35' r='35'/%3E%3Ccircle cx='35' cy='65' r='35'/%3E%3Ccircle cx='65' cy='65' r='35'/%3E%3C/svg%3E") no-repeat center / contain;
-        top: 50%; margin-top: -50px; left: -50px; 
-    }
-    .g-link-wrapper .shape-identite:hover { transform: scale(1.1); }
-    
-    /* Print : Arch */
-    .g-link-wrapper .shape-print {
-        width: 90px; height: 130px;
-        background: var(--accent-purple);
-        border-radius: 90px 90px 20px 20px;
-        top: -45px; right: -45px;
-    }
-    .g-link-wrapper .shape-print:hover { transform: scale(1.1); }
-    
-    /* Digital : Slanted */
-    .g-link-wrapper .shape-digital {
-        width: 90px; height: 90px;
-        background: var(--accent-cyan);
-        border-radius: 30px;
-        transform: skew(-10deg) rotate(-5deg);
-        top: 50%; margin-top: -45px; left: -45px;
-    }
-    .g-link-wrapper .shape-digital:hover { transform: skew(-10deg) rotate(-5deg) scale(1.1); }
-    
-    /* Motion : Circle */
-    .g-link-wrapper .shape-motion {
-        width: 100px; height: 100px;
-        background: var(--accent-purple);
-        border-radius: 50%; 
-        top: -40px; right: -40px;
-    }
-    .g-link-wrapper .shape-motion:hover { transform: scale(1.1); }
-    
-    /* DAO : Soft burst */
-    .g-link-wrapper .shape-dao {
-        width: 110px; height: 110px;
-        background-color: var(--accent-cyan);
-        -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='15' y='15' width='70' height='70' rx='20'/%3E%3Crect x='15' y='15' width='70' height='70' rx='20' transform='rotate(45 50 50)'/%3E%3C/svg%3E") no-repeat center / contain;
-        mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='15' y='15' width='70' height='70' rx='20'/%3E%3Crect x='15' y='15' width='70' height='70' rx='20' transform='rotate(45 50 50)'/%3E%3C/svg%3E") no-repeat center / contain;
-        bottom: -40px; right: -40px;
-    }
-    .g-link-wrapper .shape-dao:hover { transform: scale(1.1); }
-    
-    /* Stratégie : Semicircle */
-    .g-link-wrapper .shape-strategie {
-        width: 120px; height: 75px;
-        background: var(--accent-purple);
-        border-radius: 20px 20px 120px 120px;
-        bottom: -30px; left: -50px;
-    }
-    .g-link-wrapper .shape-strategie:hover { transform: scale(1.1); }
+    <!-- 1. POLICES ET ICÔNES EXTERNES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Pixelify+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    /* CONTENEUR ET SECTIONS */
-    .g-link-wrapper .content-layer {
-        position: relative;
-        z-index: 1;
-    }
+    <!-- 2. STYLES -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+        }
 
-    .g-link-wrapper .container {
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 0 5%;
-        position: relative; 
-        z-index: 2; 
-    }
+        /* VARIABLES DE COULEUR */
+        .g-link-wrapper {
+            --bg-dark: #0a131a;
+            --bg-darker: #060b10;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent-cyan: #00A1C6;
+            --accent-purple: #005A8C;
+            --accent-gradient: linear-gradient(135deg, #00A1C6 0%, #005A8C 100%);
+            /* Nouvelles couleurs pop inspirées de l'affiche */
+            --accent-pink: #FF2A6D;
+            --accent-yellow: #F9F871;
+            --accent-green: #05D59E;
+            
+            --glass-bg: rgba(255, 255, 255, 0.04);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-border-light: rgba(255, 255, 255, 0.25);
+            --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 
-    .g-link-wrapper section {
-        padding: 120px 0 80px 0;
-        position: relative;
-    }
+            background-color: transparent;
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            position: relative;
+            overflow-x: hidden;
+            width: 100%;
+            text-align: left;
+        }
 
-    /* TYPOGRAPHIE */
-    .g-link-wrapper h1, .g-link-wrapper h2, .g-link-wrapper h3, .g-link-wrapper h4, .g-link-wrapper .font-display {
-        font-family: 'Space Grotesk', sans-serif;
-        color: #ffffff;
-        font-weight: 700;
-        line-height: 1.2;
-    }
+        .g-link-wrapper * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    .g-link-wrapper .gradient-text {
-        background: var(--accent-gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
+        /* === LE NOUVEAU POINT D'ANCRAGE === */
+        .g-link-wrapper .shape-anchor {
+            position: relative;
+            z-index: 1;
+            height: 100%; /* Force l'ancrage à s'étirer */
+        }
 
-    .g-link-wrapper p {
-        font-size: 1.125rem;
-        line-height: 1.7;
-        color: var(--text-muted);
-        margin-bottom: 1.5rem;
-    }
+        /* === FORMES GÉOMÉTRIQUES PLATES (STYLE MATERIAL 3) === */
+        .g-link-wrapper .section-bg-shape {
+            position: absolute;
+            z-index: -1;
+            pointer-events: auto;
+            cursor: pointer;
+            opacity: 0.9;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+            transform-origin: center; 
+        }
+        
+        /* Identité : 4-leaf clover */
+        .g-link-wrapper .shape-identite {
+            width: 100px; height: 100px;
+            background-color: var(--accent-cyan);
+            -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='35' cy='35' r='35'/%3E%3Ccircle cx='65' cy='35' r='35'/%3E%3Ccircle cx='35' cy='65' r='35'/%3E%3Ccircle cx='65' cy='65' r='35'/%3E%3C/svg%3E") no-repeat center / contain;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='35' cy='35' r='35'/%3E%3Ccircle cx='65' cy='35' r='35'/%3E%3Ccircle cx='35' cy='65' r='35'/%3E%3Ccircle cx='65' cy='65' r='35'/%3E%3C/svg%3E") no-repeat center / contain;
+            top: 50%; margin-top: -50px; left: -50px; 
+        }
+        .g-link-wrapper .shape-identite:hover { transform: scale(1.1); }
+        
+        /* Print : Arch */
+        .g-link-wrapper .shape-print {
+            width: 90px; height: 130px;
+            background: var(--accent-purple);
+            border-radius: 90px 90px 20px 20px;
+            top: -45px; right: -45px;
+        }
+        .g-link-wrapper .shape-print:hover { transform: scale(1.1); }
+        
+        /* Digital : Slanted */
+        .g-link-wrapper .shape-digital {
+            width: 90px; height: 90px;
+            background: var(--accent-cyan);
+            border-radius: 30px;
+            transform: skew(-10deg) rotate(-5deg);
+            top: 50%; margin-top: -45px; left: -45px;
+        }
+        .g-link-wrapper .shape-digital:hover { transform: skew(-10deg) rotate(-5deg) scale(1.1); }
+        
+        /* Motion : Circle */
+        .g-link-wrapper .shape-motion {
+            width: 100px; height: 100px;
+            background: var(--accent-purple);
+            border-radius: 50%; 
+            top: -40px; right: -40px;
+        }
+        .g-link-wrapper .shape-motion:hover { transform: scale(1.1); }
+        
+        /* DAO : Soft burst */
+        .g-link-wrapper .shape-dao {
+            width: 110px; height: 110px;
+            background-color: var(--accent-cyan);
+            -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='15' y='15' width='70' height='70' rx='20'/%3E%3Crect x='15' y='15' width='70' height='70' rx='20' transform='rotate(45 50 50)'/%3E%3C/svg%3E") no-repeat center / contain;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='15' y='15' width='70' height='70' rx='20'/%3E%3Crect x='15' y='15' width='70' height='70' rx='20' transform='rotate(45 50 50)'/%3E%3C/svg%3E") no-repeat center / contain;
+            bottom: -40px; right: -40px;
+        }
+        .g-link-wrapper .shape-dao:hover { transform: scale(1.1); }
+        
+        /* Stratégie : Semicircle */
+        .g-link-wrapper .shape-strategie {
+            width: 120px; height: 75px;
+            background: var(--accent-purple);
+            border-radius: 20px 20px 120px 120px;
+            bottom: -30px; left: -50px;
+        }
+        .g-link-wrapper .shape-strategie:hover { transform: scale(1.1); }
 
-    .g-link-wrapper .subtitle {
-        font-size: 1.35rem;
-        color: var(--text-main);
-        max-width: 800px;
-    }
+        /* CONTENEUR ET SECTIONS */
+        .g-link-wrapper .content-layer {
+            position: relative;
+            z-index: 1;
+        }
 
-    /* EN-TÊTES DE SECTION */
-    .g-link-wrapper .section-header {
-        position: relative;
-        text-align: left;
-        margin-bottom: 80px;
-        padding-left: 20px;
-        border-left: 4px solid var(--accent-cyan);
-    }
+        .g-link-wrapper .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 5%;
+            position: relative; 
+            z-index: 2; 
+        }
 
-    .g-link-wrapper .title-bg {
-        position: absolute;
-        top: -40px;
-        left: -10px;
-        font-size: clamp(4rem, 10vw, 8rem);
-        font-family: 'Space Grotesk', sans-serif;
-        font-weight: 700;
-        color: transparent;
-        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.05);
-        z-index: 0;
-        user-select: none;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        white-space: nowrap;
-        opacity: 0.7;
-    }
+        .g-link-wrapper section {
+            padding: 120px 0 80px 0;
+            position: relative;
+        }
 
-    .g-link-wrapper .section-header h2 {
-        font-size: clamp(2.5rem, 5vw, 4rem);
-        letter-spacing: -1.5px;
-        margin-bottom: 0;
-        position: relative;
-        z-index: 1;
-    }
+        /* TYPOGRAPHIE */
+        .g-link-wrapper h1, .g-link-wrapper h2, .g-link-wrapper h3, .g-link-wrapper h4, .g-link-wrapper .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+            color: #ffffff;
+            font-weight: 700;
+            line-height: 1.2;
+        }
 
-    /* === EFFET GLASSMORPHISM === */
-    .g-link-wrapper .liquid-glass {
-        background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.01) 100%);
-        backdrop-filter: blur(24px) saturate(120%);
-        -webkit-backdrop-filter: blur(24px) saturate(120%);
-        border: 1px solid var(--glass-border);
-        border-top: 1px solid var(--glass-border-light);
-        border-left: 1px solid var(--glass-border-light);
-        border-radius: 24px;
-        box-shadow: var(--glass-shadow), inset 0 0 20px rgba(0, 161, 198, 0.03);
-        transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-        position: relative;
-        overflow: hidden;
-    }
+        /* === NOUVELLES CLASSES POUR LE STYLE AFFICHE === */
+        .g-link-wrapper .font-pixel {
+            font-family: 'Pixelify Sans', sans-serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
 
-    .g-link-wrapper .liquid-glass::before {
-        content: '';
-        position: absolute;
-        top: 0; left: -100%; width: 50%; height: 100%;
-        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0) 100%);
-        transform: skewX(-25deg);
-        transition: all 0.75s ease;
-        z-index: 0;
-    }
+        .g-link-wrapper .sticker {
+            position: absolute;
+            z-index: 10;
+            font-family: 'Pixelify Sans', sans-serif;
+            font-size: 1.2rem;
+            padding: 5px 15px;
+            color: #000;
+            text-transform: uppercase;
+            font-weight: 600;
+            box-shadow: 4px 4px 0px rgba(0,0,0,0.8);
+            border: 2px solid #000;
+            white-space: nowrap;
+            transition: transform 0.3s ease;
+        }
+        .g-link-wrapper .sticker:hover { transform: scale(1.1) rotate(0deg) !important; z-index: 20; }
+        .g-link-wrapper .sticker.pink { background-color: var(--accent-pink); }
+        .g-link-wrapper .sticker.yellow { background-color: var(--accent-yellow); }
+        .g-link-wrapper .sticker.green { background-color: var(--accent-green); }
 
-    .g-link-wrapper .liquid-glass:hover::before { left: 200%; }
+        .g-link-wrapper .gradient-text {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
-    .g-link-wrapper .liquid-glass:hover {
-        transform: translateY(-12px) scale(1.02);
-        border-top-color: rgba(0, 161, 198, 0.6);
-        border-left-color: rgba(0, 90, 140, 0.6);
-        box-shadow: 0 25px 50px rgba(0, 161, 198, 0.2), inset 0 0 30px rgba(0, 161, 198, 0.08);
-    }
+        .g-link-wrapper p {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
 
-    @keyframes floating {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-8px); }
-        100% { transform: translateY(0px); }
-    }
-    .g-link-wrapper .floating-elem { animation: floating 6s ease-in-out infinite; }
-    .g-link-wrapper .floating-elem.d-1 { animation-delay: 1s; }
-    .g-link-wrapper .floating-elem.d-2 { animation-delay: 2s; }
-    .g-link-wrapper .floating-elem:hover { animation-play-state: paused; }
+        .g-link-wrapper .subtitle {
+            font-size: 1.35rem;
+            color: var(--text-main);
+            max-width: 800px;
+        }
 
-    /* GRILLES */
-    .g-link-wrapper .grid-2 {
-        display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 50px; align-items: stretch; margin-bottom: 40px;
-    }
-    .g-link-wrapper .grid-3 {
-        display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 40px;
-    }
+        /* EN-TÊTES DE SECTION */
+        .g-link-wrapper .section-header {
+            position: relative;
+            text-align: left;
+            margin-bottom: 80px;
+            padding-left: 20px;
+            border-left: 4px solid var(--accent-cyan);
+        }
 
-    /* CARTES & CONTENU */
-    .g-link-wrapper .card {
-        padding: 40px 30px; height: 100%; display: flex; flex-direction: column; z-index: 1;
-    }
-    .g-link-wrapper .card > * { position: relative; z-index: 2; }
+        .g-link-wrapper .title-bg {
+            position: absolute;
+            top: -40px;
+            left: -10px;
+            font-size: clamp(4rem, 10vw, 8rem);
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.05);
+            z-index: 0;
+            user-select: none;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            opacity: 0.7;
+        }
 
-    .g-link-wrapper .card .icon {
-        background: rgba(0, 161, 198, 0.1); color: var(--accent-cyan);
-        width: 65px; height: 65px; border-radius: 18px;
-        display: flex; align-items: center; justify-content: center;
-        font-size: 1.8rem; margin-bottom: 1.5rem; transition: all 0.3s ease;
-    }
-    .g-link-wrapper .card:hover .icon {
-        background: var(--accent-cyan); color: #fff; transform: rotate(-10deg) scale(1.1);
-    }
-    .g-link-wrapper .card h3 { font-size: 1.6rem; margin-bottom: 1rem; }
+        .g-link-wrapper .section-header h2 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            letter-spacing: -1.5px;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 1;
+        }
 
-    /* === GESTION DES IMAGES ET DES MARGES (CADRE VERT) === */
-    
-    .g-link-wrapper .img-placeholder {
-        background: linear-gradient(135deg, rgba(0,161,198,0.2) 0%, rgba(0,90,140,0.2) 100%);
-        border: 2px dashed rgba(0, 161, 198, 0.4);
-        display: flex; align-items: center; justify-content: center;
-        color: var(--accent-cyan); font-family: 'Space Grotesk', sans-serif;
-        font-weight: 600; text-align: center;
-    }
+        /* === EFFET GLASSMORPHISM === */
+        .g-link-wrapper .liquid-glass {
+            background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.01) 100%);
+            backdrop-filter: blur(24px) saturate(120%);
+            -webkit-backdrop-filter: blur(24px) saturate(120%);
+            border: 1px solid var(--glass-border);
+            border-top: 1px solid var(--glass-border-light);
+            border-left: 1px solid var(--glass-border-light);
+            border-radius: 24px;
+            box-shadow: var(--glass-shadow), inset 0 0 20px rgba(0, 161, 198, 0.03);
+            transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+            position: relative;
+            overflow: hidden;
+            will-change: transform;
+            backface-visibility: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
 
-    /* Marge du bloc en verre (Padding de 24px autour de l'image) */
-    .g-link-wrapper .p-2 { 
-        padding: 24px; 
-        display: flex;
-        flex-direction: column;
-        height: 100%; /* S'étire à 100% de la hauteur de la grille */
-    }
+        .g-link-wrapper .liquid-glass::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%; width: 50%; height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0) 100%);
+            transform: skewX(-25deg);
+            transition: all 0.75s ease;
+            z-index: 0;
+        }
 
-    .g-link-wrapper .card-image { padding: 24px; height: 100%; display: flex; flex-direction: column; }
+        .g-link-wrapper .liquid-glass:hover::before { left: 200%; }
 
-    /* Le conteneur strict qui masque les débordements (Le trait vert sur votre capture) */
-    .g-link-wrapper .card-image .img-wrapper, 
-    .g-link-wrapper .feature-large .img-wrapper,
-    .g-link-wrapper .p-2 .img-wrapper {
-        border-radius: 16px; 
-        overflow: hidden; /* CRUCIAL : Empêche l'image de déborder pendant le zoom ! */
-        position: relative;
-        flex-grow: 1; /* Pousse le conteneur à remplir tout l'espace disponible vers le bas */
-        display: flex;
-        flex-direction: column;
-    }
+        .g-link-wrapper .liquid-glass:hover {
+            transform: translateY(-12px) scale(1.02);
+            border-top-color: rgba(0, 161, 198, 0.6);
+            border-left-color: rgba(0, 90, 140, 0.6);
+            box-shadow: 0 25px 50px rgba(0, 161, 198, 0.2), inset 0 0 30px rgba(0, 161, 198, 0.08);
+        }
 
-    .g-link-wrapper .card-image .img-wrapper { 
-        height: 250px; 
-        margin-bottom: 1.5rem; 
-        flex-grow: 0; 
-    }
+        /* PUNCH DE COULEUR SUR L'OVERLAY DE L'IMAGE AU SURVOL */
+        .g-link-wrapper .liquid-glass:hover .img-placeholder {
+            border-color: var(--accent-pink);
+            color: var(--accent-pink);
+            background: linear-gradient(135deg, rgba(255,42,109,0.15) 0%, rgba(249,248,113,0.1) 100%);
+        }
 
-    /* Taille des grandes images */
-    .g-link-wrapper .feature-large .img-wrapper,
-    .g-link-wrapper .p-2 .img-wrapper { 
-        height: 100%; 
-        min-height: 400px; 
-        width: 100%; 
-        margin-bottom: 0; 
-    }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+        .g-link-wrapper .floating-elem { animation: floating 6s ease-in-out infinite; }
+        .g-link-wrapper .floating-elem.d-1 { animation-delay: 1s; }
+        .g-link-wrapper .floating-elem.d-2 { animation-delay: 2s; }
+        .g-link-wrapper .floating-elem:hover { animation-play-state: paused; }
 
-    /* L'image elle-même */
-    .g-link-wrapper img.real-img { 
-        position: absolute; /* Garantit que l'image écrase le comportement flexible interne */
-        top: 0;
-        left: 0;
-        width: 100%; 
-        height: 100%; 
-        object-fit: cover; 
-        display: block;
-        transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1); 
-    }
+        /* GRILLES */
+        .g-link-wrapper .grid-2 {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 50px; align-items: stretch; margin-bottom: 40px;
+        }
+        .g-link-wrapper .grid-3 {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 40px;
+        }
 
-    /* L'effet de zoom confiné dans l'enveloppe */
-    .g-link-wrapper .liquid-glass:hover img.real-img { 
-        transform: scale(1.1); /* Grandit à l'intérieur du wrapper sans affecter la marge ! */
-    }
+        /* CARTES & CONTENU */
+        .g-link-wrapper .card {
+            padding: 40px 30px; height: 100%; display: flex; flex-direction: column; z-index: 1;
+        }
+        .g-link-wrapper .card > * { position: relative; z-index: 2; }
 
-    /* BOUTON CONTACT PAR SECTION */
-    .g-link-wrapper .section-action {
-        text-align: right; margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 30px;
-    }
-    .g-link-wrapper .btn-section-link {
-        display: inline-flex; align-items: center; gap: 12px;
-        padding: 12px 30px; border-radius: 30px;
-        background: rgba(0, 161, 198, 0.08); border: 1px solid rgba(0, 161, 198, 0.3);
-        color: var(--accent-cyan); font-family: 'Space Grotesk', sans-serif;
-        font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
-        text-decoration: none; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-    .g-link-wrapper .btn-section-link:hover {
-        background: var(--accent-gradient); color: #fff; border-color: transparent;
-        transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 161, 198, 0.3);
-    }
-    .g-link-wrapper .btn-section-link:hover i { transform: translateX(5px); }
+        .g-link-wrapper .card .icon {
+            background: rgba(0, 161, 198, 0.1); color: var(--accent-cyan);
+            width: 65px; height: 65px; border-radius: 18px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.8rem; margin-bottom: 1.5rem; transition: all 0.3s ease;
+        }
+        .g-link-wrapper .card:hover .icon {
+            background: var(--accent-cyan); color: #fff; transform: rotate(-10deg) scale(1.1);
+        }
+        .g-link-wrapper .card h3 { font-size: 1.6rem; margin-bottom: 1rem; }
 
-    /* CARROUSELS PLEIN FORMAT */
-    .g-link-wrapper .full-carousel {
-        width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;
-        overflow: hidden; background: transparent; padding: 40px 0; margin-bottom: 80px;
-        border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-    .g-link-wrapper .carousel-track { display: flex; transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1); }
-    .g-link-wrapper .carousel-slide { min-width: 100vw; height: 60vh; padding: 0 5vw; display: flex; justify-content: center; align-items: center; }
-    .g-link-wrapper .carousel-slide .img-wrapper {
-        width: 100%; height: 100%; border-radius: 24px; overflow: hidden;
-        border: 1px solid var(--glass-border); box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-    }
+        /* === GESTION DES IMAGES ET DES MARGES (CADRE VERT) === */
+        
+        .g-link-wrapper .img-placeholder {
+            background: linear-gradient(135deg, rgba(0,161,198,0.2) 0%, rgba(0,90,140,0.2) 100%);
+            border: 2px dashed rgba(0, 161, 198, 0.4);
+            display: flex; align-items: center; justify-content: center;
+            color: var(--accent-cyan); font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600; text-align: center;
+        }
 
-    /* Listes personnalisées */
-    .g-link-wrapper .custom-list { list-style: none; }
-    .g-link-wrapper .custom-list li { position: relative; padding-left: 35px; margin-bottom: 1.25rem; font-size: 1.125rem; color: var(--text-muted); transition: transform 0.3s ease, color 0.3s ease; }
-    .g-link-wrapper .custom-list li:hover { transform: translateX(10px); color: #fff; }
-    .g-link-wrapper .custom-list li::before {
-        content: '\f0da'; font-family: 'Font Awesome 6 Free'; font-weight: 900;
-        position: absolute; left: 0; top: 2px; color: var(--accent-cyan); font-size: 1.2rem; transition: all 0.3s ease;
-    }
-    .g-link-wrapper .custom-list li:hover::before { transform: scale(1.3); text-shadow: 0 0 10px rgba(0, 161, 198, 0.8); }
-    .g-link-wrapper .custom-list strong { color: #fff; transition: color 0.3s ease; }
-    .g-link-wrapper .custom-list li:hover strong { color: var(--accent-cyan); }
-    .g-link-wrapper .custom-list li i { transition: all 0.3s ease; }
-    .g-link-wrapper .custom-list li:hover i { transform: rotate(-15deg) scale(1.3); text-shadow: 0 0 10px rgba(0, 161, 198, 0.8); }
+        /* Marge du bloc en verre (Padding de 24px autour de l'image) */
+        .g-link-wrapper .p-2 { 
+            padding: 24px; 
+            display: flex;
+            flex-direction: column;
+            height: 100%; /* S'étire à 100% de la hauteur de la grille */
+        }
 
-    /* Icon Grid */
-    .g-link-wrapper .icon-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
-    .g-link-wrapper .icon-item { position: relative; padding-left: 50px; transition: transform 0.3s ease; }
-    .g-link-wrapper .icon-item:hover { transform: translateX(8px); }
-    .g-link-wrapper .icon-item i { position: absolute; left: 0; top: 4px; font-size: 1.75rem; color: var(--accent-cyan); transition: all 0.3s ease; }
-    .g-link-wrapper .icon-item:hover i { transform: rotate(-10deg) scale(1.2); text-shadow: 0 0 15px rgba(0, 161, 198, 0.6); }
-    .g-link-wrapper .icon-item strong { display: block; font-family: 'Space Grotesk', sans-serif; font-size: 1.35rem; color: #fff; margin-bottom: 0.5rem; }
+        .g-link-wrapper .card-image { padding: 24px; height: 100%; display: flex; flex-direction: column; }
 
-    /* Citation */
-    .g-link-wrapper .quote-box { text-align: center; padding: 100px 40px; border-radius: 40px; position: relative; }
-    .g-link-wrapper .quote-box blockquote { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); color: #fff; line-height: 1.3; margin-bottom: 1.5rem; position: relative; z-index: 1; }
-    .g-link-wrapper .quote-box cite { font-size: 1.35rem; color: var(--accent-cyan); font-style: normal; font-weight: 600; }
-    .g-link-wrapper .quote-mark { position: absolute; font-family: 'Space Grotesk', sans-serif; font-size: 12rem; color: rgba(0, 161, 198, 0.08); line-height: 1; z-index: 0; }
-    .g-link-wrapper .qm-left { top: 0px; left: 40px; }
-    .g-link-wrapper .qm-right { bottom: -60px; right: 40px; }
-
-    /* Footer */
-    .g-link-wrapper footer { padding: 60px 0 60px; text-align: center; position: relative; }
-    .g-link-wrapper .contact-pills { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-top: 50px; }
-    .g-link-wrapper .pill {
-        padding: 15px 30px; border-radius: 30px; font-family: 'Space Grotesk', sans-serif; color: #fff;
-        display: flex; align-items: center; gap: 12px; text-decoration: none; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-    .g-link-wrapper .pill i { font-size: 1.2rem; }
-    .g-link-wrapper .pill:hover { background: rgba(0, 161, 198, 0.15); transform: translateY(-5px) scale(1.05); border-color: var(--accent-cyan); }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-        .g-link-wrapper section { padding: 80px 0 40px 0; }
-        .g-link-wrapper .section-header { margin-bottom: 50px; }
-        .g-link-wrapper .carousel-slide { padding: 0 2vw; height: 40vh; }
-        .g-link-wrapper .p-2 { padding: 15px; } /* Marge réduite sur mobile */
+        /* Le conteneur strict qui masque les débordements (Le trait vert sur votre capture) */
+        .g-link-wrapper .card-image .img-wrapper, 
         .g-link-wrapper .feature-large .img-wrapper,
-        .g-link-wrapper .p-2 .img-wrapper { min-height: 300px; }
-    }
-</style>
+        .g-link-wrapper .p-2 .img-wrapper {
+            border-radius: 16px; 
+            overflow: hidden; /* CRUCIAL : Empêche l'image de déborder pendant le zoom ! */
+            position: relative;
+            flex-grow: 1; /* Pousse le conteneur à remplir tout l'espace disponible vers le bas */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .g-link-wrapper .card-image .img-wrapper { 
+            height: 250px; 
+            margin-bottom: 1.5rem; 
+            flex-grow: 0; 
+        }
+
+        /* Taille des grandes images */
+        .g-link-wrapper .feature-large .img-wrapper,
+        .g-link-wrapper .p-2 .img-wrapper { 
+            height: 100%; 
+            min-height: 400px; 
+            width: 100%; 
+            margin-bottom: 0; 
+        }
+
+        /* L'image elle-même */
+        .g-link-wrapper img.real-img { 
+            position: absolute; /* Garantit que l'image écrase le comportement flexible interne */
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            display: block;
+            transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1); 
+        }
+
+        /* L'effet de zoom confiné dans l'enveloppe */
+        .g-link-wrapper .liquid-glass:hover img.real-img { 
+            transform: scale(1.1); /* Grandit à l'intérieur du wrapper sans affecter la marge ! */
+        }
+
+        /* BOUTON CONTACT PAR SECTION */
+        .g-link-wrapper .section-action {
+            text-align: right; margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 30px;
+        }
+        .g-link-wrapper .btn-section-link {
+            display: inline-flex; align-items: center; gap: 12px;
+            padding: 12px 30px; border-radius: 30px;
+            background: rgba(0, 161, 198, 0.08); border: 1px solid rgba(0, 161, 198, 0.3);
+            color: var(--accent-cyan); font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+            text-decoration: none; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .g-link-wrapper .btn-section-link:hover {
+            background: var(--accent-gradient); color: #fff; border-color: transparent;
+            transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 161, 198, 0.3);
+        }
+        .g-link-wrapper .btn-section-link:hover i { transform: translateX(5px); }
+
+        /* CARROUSELS PLEIN FORMAT */
+        .g-link-wrapper .full-carousel {
+            width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;
+            overflow: hidden; background: transparent; padding: 40px 0; margin-bottom: 80px;
+            border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .g-link-wrapper .carousel-track { display: flex; transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1); }
+        .g-link-wrapper .carousel-slide { min-width: 100vw; height: 60vh; padding: 0 5vw; display: flex; justify-content: center; align-items: center; }
+        .g-link-wrapper .carousel-slide .img-wrapper {
+            width: 100%; height: 100%; border-radius: 24px; overflow: hidden;
+            border: 1px solid var(--glass-border); box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+
+        /* Style spécifique pour le carrousel d'images PNG nues (Carrousel 1) */
+        .g-link-wrapper .bare-carousel {
+            border: none;
+            background: transparent;
+        }
+        .g-link-wrapper .bare-slide {
+            height: 40vh; /* Moins haut que les grands blocs pour bien voir les PNG */
+        }
+        .g-link-wrapper .bare-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* L'image s'adapte sans être coupée ni déformée */
+            filter: drop-shadow(0 15px 25px rgba(0,0,0,0.5)); /* Ombre qui épouse les contours du PNG transparent */
+        }
+
+        /* Style du canvas pour le mini-jeu */
+        .g-link-wrapper #gameCanvas {
+            background-color: transparent;
+            border: 2px solid var(--accent-cyan);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 161, 198, 0.4);
+            image-rendering: pixelated; /* Garde le look 8-bit net */
+            display: block;
+            margin: 0 auto;
+            touch-action: none; /* Empêche le scroll sur mobile quand on joue */
+        }
+
+        /* Listes personnalisées */
+        .g-link-wrapper .custom-list { list-style: none; }
+        .g-link-wrapper .custom-list li { position: relative; padding-left: 35px; margin-bottom: 1.25rem; font-size: 1.125rem; color: var(--text-muted); transition: transform 0.3s ease, color 0.3s ease; }
+        .g-link-wrapper .custom-list li:hover { transform: translateX(10px); color: #fff; }
+        .g-link-wrapper .custom-list li::before {
+            content: '\f0da'; font-family: 'Font Awesome 6 Free'; font-weight: 900;
+            position: absolute; left: 0; top: 2px; color: var(--accent-cyan); font-size: 1.2rem; transition: all 0.3s ease;
+        }
+        .g-link-wrapper .custom-list li:hover::before { transform: scale(1.3); text-shadow: 0 0 10px rgba(0, 161, 198, 0.8); }
+        .g-link-wrapper .custom-list strong { color: #fff; transition: color 0.3s ease; }
+        .g-link-wrapper .custom-list li:hover strong { color: var(--accent-cyan); }
+        .g-link-wrapper .custom-list li i { transition: all 0.3s ease; }
+        .g-link-wrapper .custom-list li:hover i { transform: rotate(-15deg) scale(1.3); text-shadow: 0 0 10px rgba(0, 161, 198, 0.8); }
+
+        /* Icon Grid */
+        .g-link-wrapper .icon-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+        .g-link-wrapper .icon-item { position: relative; padding-left: 50px; transition: transform 0.3s ease; }
+        .g-link-wrapper .icon-item:hover { transform: translateX(8px); }
+        .g-link-wrapper .icon-item i { position: absolute; left: 0; top: 4px; font-size: 1.75rem; color: var(--accent-cyan); transition: all 0.3s ease; }
+        .g-link-wrapper .icon-item:hover i { transform: rotate(-10deg) scale(1.2); text-shadow: 0 0 15px rgba(0, 161, 198, 0.6); }
+        .g-link-wrapper .icon-item strong { display: block; font-family: 'Space Grotesk', sans-serif; font-size: 1.35rem; color: #fff; margin-bottom: 0.5rem; }
+
+        /* Citation */
+        .g-link-wrapper .quote-box { text-align: center; padding: 100px 40px; border-radius: 40px; position: relative; }
+        .g-link-wrapper .quote-box blockquote { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); color: #fff; line-height: 1.3; margin-bottom: 1.5rem; position: relative; z-index: 1; }
+        .g-link-wrapper .quote-box cite { font-size: 1.35rem; color: var(--accent-cyan); font-style: normal; font-weight: 600; }
+        .g-link-wrapper .quote-mark { position: absolute; font-family: 'Space Grotesk', sans-serif; font-size: 12rem; color: rgba(0, 161, 198, 0.08); line-height: 1; z-index: 0; }
+        .g-link-wrapper .qm-left { top: 0px; left: 40px; }
+        .g-link-wrapper .qm-right { bottom: -60px; right: 40px; }
+
+        /* Footer */
+        .g-link-wrapper footer { padding: 60px 0 60px; text-align: center; position: relative; }
+        .g-link-wrapper .contact-pills { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-top: 50px; }
+        .g-link-wrapper .pill {
+            padding: 15px 30px; border-radius: 30px; font-family: 'Space Grotesk', sans-serif; color: #fff;
+            display: flex; align-items: center; gap: 12px; text-decoration: none; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .g-link-wrapper .pill i { font-size: 1.2rem; }
+        .g-link-wrapper .pill:hover { background: rgba(0, 161, 198, 0.15); transform: translateY(-5px) scale(1.05); border-color: var(--accent-cyan); }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .g-link-wrapper section { padding: 80px 0 40px 0; }
+            .g-link-wrapper .section-header { margin-bottom: 50px; }
+            .g-link-wrapper .carousel-slide { padding: 0 2vw; height: 40vh; }
+            .g-link-wrapper .p-2 { padding: 15px; } /* Marge réduite sur mobile */
+            .g-link-wrapper .feature-large .img-wrapper,
+            .g-link-wrapper .p-2 .img-wrapper { min-height: 300px; }
+        }
+    </style>
+</head>
+<body>
 
 <!-- 3. STRUCTURE HTML -->
 <div class="g-link-wrapper">
     <div class="content-layer">
         
+        <!-- SECTION 0 : INTRO (Inspiré de l'affiche) -->
+        <section id="intro" style="padding: 60px 0 20px 0;">
+            <div class="container">
+                <div style="position: relative; padding: 40px; border-left: 6px solid var(--accent-cyan); background: linear-gradient(90deg, rgba(0, 161, 198, 0.1) 0%, transparent 100%);">
+                    <div class="sticker pink" style="top: -15px; left: 20px; transform: rotate(-3deg);">128 experts...</div>
+                    <div class="sticker yellow" style="top: -5px; left: 180px; transform: rotate(4deg);">enfin presque</div>
+                    <h2 class="font-pixel" style="font-size: clamp(2.5rem, 4vw, 4rem); color: #fff; line-height: 1.1; margin: 0; text-transform: none;">
+                        Vous cherchez une agence<br>
+                        de communication<br>
+                        <span style="color: var(--text-muted);">pas tout à fait<br>
+                        comme les autres</span>
+                        <span style="color: var(--accent-cyan); font-size: 1.6em; vertical-align: bottom; line-height: 0.5;">?</span>
+                    </h2>
+                </div>
+            </div>
+        </section>
+
         <!-- SECTION 1 : Identité Visuelle -->
         <section id="services">
             <div class="container">
@@ -770,7 +873,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     <!-- ENVELOPPE D'ANCRAGE POUR LA FORME ET LE BLOC -->
                     <div class="shape-anchor">
                         <div class="section-bg-shape shape-identite"></div>
-                        <div class="liquid-glass feature-large floating-elem p-2">
+                        <div class="sticker green" style="top: -15px; right: 20px; transform: rotate(5deg);">Identité sur mesure</div>
+                        <div class="liquid-glass feature-large p-2">
                             <div class="img-wrapper img-placeholder">
                                 <img src="images/GL_01.png" alt="Identité visuelle G-Link" class="real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                                 <span style="display:none;">[Image GL_01.png attendue ici]</span>
@@ -823,7 +927,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     <!-- ENVELOPPE D'ANCRAGE POUR LA FORME ET LE BLOC -->
                     <div class="shape-anchor">
                         <div class="section-bg-shape shape-print"></div>
-                        <div class="liquid-glass p-2 floating-elem d-1">
+                        <div class="sticker pink" style="bottom: 20px; left: -20px; transform: rotate(-8deg);">Id / Ai / Ps</div>
+                        <div class="liquid-glass p-2">
                             <div class="img-wrapper img-placeholder">
                                 <img src="images/GL_02.png" alt="Packaging 3D" class="real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                                 <span style="display:none;">[Image GL_02.png attendue ici]</span>
@@ -850,7 +955,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     <!-- ENVELOPPE D'ANCRAGE POUR LA FORME ET LE BLOC -->
                     <div class="shape-anchor">
                         <div class="section-bg-shape shape-digital"></div>
-                        <div class="liquid-glass p-2 floating-elem">
+                        <div class="sticker yellow" style="top: 40%; right: -25px; transform: rotate(6deg);">Le Bidouilleur</div>
+                        <div class="liquid-glass p-2">
                             <div class="img-wrapper img-placeholder">
                                 <img src="images/GL_03.png" alt="Web Design UI" class="real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                                 <span style="display:none;">[Image GL_03.png attendue ici]</span>
@@ -871,6 +977,52 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 <div class="section-action">
                     <a href="#contact" class="btn-section-link">Let's Link pour votre digital <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARROUSEL 1 (Déplacé ici, mode images PNG sans conteneur) -->
+        <div class="full-carousel bare-carousel" id="carousel-1" style="margin-bottom: 0;">
+            <div class="carousel-track">
+                <div class="carousel-slide bare-slide"><img src="images/GL_07.png" alt="Slide 7" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span style="display:none; font-size:1.5rem; color:var(--accent-cyan);">[PNG transparent: GL_07.png]</span></div>
+                <div class="carousel-slide bare-slide"><img src="images/GL_08.png" alt="Slide 8" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span style="display:none; font-size:1.5rem; color:var(--accent-cyan);">[PNG transparent: GL_08.png]</span></div>
+                <div class="carousel-slide bare-slide"><img src="images/GL_09.png" alt="Slide 9" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span style="display:none; font-size:1.5rem; color:var(--accent-cyan);">[PNG transparent: GL_09.png]</span></div>
+                <div class="carousel-slide bare-slide"><img src="images/GL_10.png" alt="Slide 10" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span style="display:none; font-size:1.5rem; color:var(--accent-cyan);">[PNG transparent: GL_10.png]</span></div>
+                <div class="carousel-slide bare-slide"><img src="images/GL_11.png" alt="Slide 11" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span style="display:none; font-size:1.5rem; color:var(--accent-cyan);">[PNG transparent: GL_11.png]</span></div>
+                <div class="carousel-slide bare-slide"><img src="images/GL_12.png" alt="Slide 12" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span style="display:none; font-size:1.5rem; color:var(--accent-cyan);">[PNG transparent: GL_12.png]</span></div>
+            </div>
+        </div>
+
+        <!-- SECTION DEV & GG -->
+        <section id="dev" style="padding-top: 20px;">
+            <div class="container">
+                <div class="section-header">
+                    <div class="title-bg" aria-hidden="true" style="font-size: clamp(3rem, 8vw, 6rem);">DEV & GG</div>
+                    <h2>Dev & <span class="gradient-text font-pixel">GG</span></h2>
+                </div>
+                
+                <!-- ENVELOPPE POUR SORTIR LES STICKERS DU BLOC COUPÉ -->
+                <div style="position: relative; margin: 20px 0;">
+                    <div class="sticker yellow" style="top: -20px; left: 30px; transform: rotate(-4deg);">Pause GG !</div>
+                    <div class="sticker pink" style="bottom: -15px; right: 10px; transform: rotate(5deg);">100% Vanilla JS</div>
+                    
+                    <div class="liquid-glass p-2" style="text-align: center; padding: 50px 20px;">
+                        <p class="subtitle" style="margin: 0 auto 30px auto;">Au-delà du design, nous construisons des expériences interactives fluides et robustes. La preuve en code 🕹️</p>
+                        
+                        <!-- Le canvas du jeu -->
+                        <canvas id="gameCanvas" width="600" height="400" style="max-width: 100%; cursor: pointer; outline: none;" tabindex="0"></canvas>
+                        
+                        <!-- Contrôles tactiles pour mobiles et tablettes -->
+                        <div style="margin-top: 25px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                            <button class="btn-section-link" id="btnLeft" style="padding: 15px 25px; cursor: pointer; user-select: none;"><i class="fa-solid fa-arrow-left"></i></button>
+                            <button class="btn-section-link font-pixel" id="btnFire" style="padding: 15px 40px; cursor: pointer; user-select: none;">SHOOT (Z / SPACE)</button>
+                            <button class="btn-section-link" id="btnRight" style="padding: 15px 25px; cursor: pointer; user-select: none;"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-action">
+                    <a href="#contact" class="btn-section-link">Let's Link pour votre dev <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </section>
@@ -919,18 +1071,6 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
         </section>
 
-        <!-- CARROUSEL 1 -->
-        <div class="full-carousel" id="carousel-1">
-            <div class="carousel-track">
-                <div class="carousel-slide"><div class="img-wrapper img-placeholder"><img src="images/GL_07.png" class="real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span style="display:none; font-size:2rem;">[Slide GL_07.png]</span></div></div>
-                <div class="carousel-slide"><div class="img-wrapper img-placeholder"><img src="images/GL_08.png" class="real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span style="display:none; font-size:2rem;">[Slide GL_08.png]</span></div></div>
-                <div class="carousel-slide"><div class="img-wrapper img-placeholder"><img src="images/GL_09.png" class="real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span style="display:none; font-size:2rem;">[Slide GL_09.png]</span></div></div>
-                <div class="carousel-slide"><div class="img-wrapper img-placeholder"><img src="images/GL_10.png" class="real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span style="display:none; font-size:2rem;">[Slide GL_10.png]</span></div></div>
-                <div class="carousel-slide"><div class="img-wrapper img-placeholder"><img src="images/GL_11.png" class="real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span style="display:none; font-size:2rem;">[Slide GL_11.png]</span></div></div>
-                <div class="carousel-slide"><div class="img-wrapper img-placeholder"><img src="images/GL_12.png" class="real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span style="display:none; font-size:2rem;">[Slide GL_12.png]</span></div></div>
-            </div>
-        </div>
-
         <!-- SECTION 5 : Architecture & DAO -->
         <section id="dao" style="padding-top: 40px;">
             <div class="container">
@@ -938,7 +1078,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <!-- ENVELOPPE D'ANCRAGE POUR LA FORME ET LE BLOC (Avec order: 2 pour être à droite) -->
                     <div class="shape-anchor" style="order: 2;">
                         <div class="section-bg-shape shape-dao"></div>
-                        <div class="liquid-glass p-2 floating-elem d-1">
+                        <div class="liquid-glass p-2">
                             <div class="img-wrapper img-placeholder">
                                 <img src="images/GL_13.png" alt="Architecture DAO" class="real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                                 <span style="display:none;">[Image GL_13.png attendue ici]</span>
@@ -952,7 +1092,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         </div>
                         <p class="subtitle" style="margin-bottom: 40px;">L'alliance de la précision technique et du rendu esthétique pour l'ingénierie et l'immobilier.</p>
                         
-                        <div class="liquid-glass floating-elem" style="padding: 40px;">
+                        <div class="liquid-glass" style="padding: 40px;">
                             <h3 style="color: var(--accent-cyan); margin-bottom: 20px;">Nos Spécialités DAO</h3>
                             <ul class="custom-list">
                                 <li><i class="fa-solid fa-pen-ruler" style="color: var(--accent-cyan); position:absolute; left:0; top:4px;"></i> <strong>Plans 2D :</strong> Spécialité architecture et sécurité.</li>
@@ -981,14 +1121,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     <!-- ENVELOPPE D'ANCRAGE POUR LA FORME ET LE BLOC -->
                     <div class="shape-anchor">
                         <div class="section-bg-shape shape-strategie"></div>
-                        <div class="liquid-glass p-2 floating-elem">
+                        <div class="liquid-glass p-2">
                             <div class="img-wrapper img-placeholder">
                                 <img src="images/GL_14.png" alt="Stratégie" class="real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                                 <span style="display:none;">[Image GL_14.png attendue ici]</span>
                             </div>
                         </div>
                     </div>
-                    <div class="liquid-glass floating-elem d-1" style="padding: 50px;">
+                    <div class="liquid-glass" style="padding: 50px;">
                         <div class="icon-grid" style="grid-template-columns: 1fr; gap: 30px;">
                             <div class="icon-item">
                                 <i class="fa-solid fa-magnifying-glass-chart"></i>
@@ -1018,7 +1158,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <!-- SECTION : Quote -->
         <section style="padding-bottom: 20px;">
             <div class="container">
-                <div class="liquid-glass quote-box floating-elem">
+                <div class="liquid-glass quote-box">
                     <div class="quote-mark qm-left">"</div>
                     <blockquote>Ce qui doit être fait,<br>Mérite d'être bien fait.</blockquote>
                     <cite>— L'Équipe Génération Link</cite>
@@ -1043,7 +1183,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <footer id="contact">
             <div class="container">
                 <img src="images/GL_Logo_Footer.png" alt="Generation Link Logo" width="180" height="180" style="display: block; margin: 0 auto 30px auto; width: 180px; height: 180px; object-fit: contain;">
-                <h2 style="font-size: 5rem;" class="gradient-text">Let's Link.</h2>
+                <h2 style="font-size: 5rem;" class="gradient-text font-pixel">Let's Link.</h2>
                 <p class="subtitle" style="margin: 10px auto 0;">Passez aux choses sérieuses avec notre équipe.</p>
                 
                 <div class="contact-pills">
@@ -1074,8 +1214,9 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
 </div>
 
-<!-- SCRIPTS POUR LES CARROUSELS -->
+<!-- SCRIPTS POUR LES CARROUSELS ET LE JEU -->
 <script>
+    // === LOGIQUE DES CARROUSELS ===
     function initCarousel(id) {
         const carousel = document.getElementById(id);
         if(!carousel) return;
@@ -1092,11 +1233,255 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 3000);
     }
 
+    // === LOGIQUE DU MINI-JEU SPACE INVADERS ===
+    function initSpaceInvaders() {
+        const canvas = document.getElementById('gameCanvas');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+
+        let player = { x: 275, y: 360, w: 40, h: 15, speed: 5 };
+        let keys = { left: false, right: false };
+        let bullets = [];
+        let aliens = [];
+        let alienDir = 1;
+        let alienSpeed = 1;
+        let score = 0;
+        let gameOver = false;
+        let gameStarted = false;
+        let isFocused = false; // Gère l'état actif/inactif du jeu
+
+        // Couleurs de la charte
+        const colorCyan = '#00A1C6';
+        const colorPink = '#FF2A6D';
+        const colorYellow = '#F9F871';
+
+        // Gestion du Focus
+        canvas.addEventListener('mousedown', () => { isFocused = true; canvas.focus(); });
+        document.addEventListener('mousedown', (e) => {
+            const btnL = document.getElementById('btnLeft');
+            const btnR = document.getElementById('btnRight');
+            const btnF = document.getElementById('btnFire');
+            if (e.target !== canvas && e.target !== btnL && e.target !== btnR && e.target !== btnF && !btnL.contains(e.target) && !btnR.contains(e.target) && !btnF.contains(e.target)) {
+                isFocused = false;
+                keys.left = false;
+                keys.right = false;
+            }
+        });
+
+        function initAliens() {
+            aliens = [];
+            let rows = 4;
+            let cols = 8;
+            for (let r = 0; r < rows; r++) {
+                for (let c = 0; c < cols; c++) {
+                    aliens.push({ x: 40 + c * 50, y: 30 + r * 40, w: 20, h: 20, alive: true });
+                }
+            }
+        }
+
+        function drawPlayer() {
+            ctx.strokeStyle = colorCyan;
+            ctx.lineWidth = 4;
+            ctx.lineCap = 'round';
+            
+            // Dessin forme "Power" (Logo GL)
+            ctx.beginPath();
+            ctx.arc(player.x + player.w/2, player.y + player.h/2 + 2, 12, -Math.PI*0.35, Math.PI*1.35);
+            ctx.stroke();
+            
+            // Ligne verticale du bouton Power (fait office de canon)
+            ctx.beginPath();
+            ctx.moveTo(player.x + player.w/2, player.y - 8);
+            ctx.lineTo(player.x + player.w/2, player.y + 6);
+            ctx.stroke();
+        }
+
+        function drawAliens() {
+            ctx.font = '24px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            let hitEdge = false;
+            aliens.forEach(a => {
+                if (a.alive) {
+                    // Dessin Emoji Alien
+                    ctx.fillText('👾', a.x + a.w/2, a.y + a.h/2);
+                    
+                    a.x += alienSpeed * alienDir;
+                    if (a.x <= 10 || a.x + a.w >= canvas.width - 10) hitEdge = true;
+                }
+            });
+
+            if (hitEdge) {
+                alienDir *= -1;
+                aliens.forEach(a => { if(a.alive) a.y += 15; });
+            }
+        }
+
+        function drawBullets() {
+            ctx.fillStyle = colorYellow;
+            bullets.forEach((b, index) => {
+                ctx.fillRect(b.x, b.y, b.w, b.h);
+                b.y -= 7;
+                if (b.y < 0) bullets.splice(index, 1);
+            });
+        }
+
+        function checkCollisions() {
+            bullets.forEach((b, bIndex) => {
+                aliens.forEach((a, aIndex) => {
+                    if (a.alive && b.x < a.x + a.w && b.x + b.w > a.x && b.y < a.y + a.h && b.y + b.h > a.y) {
+                        a.alive = false;
+                        bullets.splice(bIndex, 1);
+                        score += 10;
+                    }
+                });
+            });
+
+            // Conditions de fin de niveau ou partie
+            let allDead = true;
+            aliens.forEach(a => {
+                if (a.alive) {
+                    allDead = false;
+                    if (a.y + a.h >= player.y) gameOver = true;
+                }
+            });
+            
+            if (allDead) {
+                alienSpeed += 0.5; // Plus dur
+                initAliens();
+            }
+        }
+
+        function drawText(txt, size, y, color) {
+            ctx.fillStyle = color;
+            ctx.font = `${size}px "Pixelify Sans", sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.fillText(txt, canvas.width/2, y);
+        }
+
+        function drawHUD() {
+            ctx.fillStyle = '#fff';
+            ctx.font = '20px "Pixelify Sans", sans-serif';
+            ctx.textAlign = 'left';
+            ctx.fillText('SCORE: ' + score, 15, 30);
+
+            if (!gameStarted && isFocused) {
+                drawText('SPACE INVADERS', 50, canvas.height/2 - 20, colorCyan);
+                drawText('Z ou ESPACE pour tirer', 20, canvas.height/2 + 20, '#fff');
+            } else if (gameOver && isFocused) {
+                drawText('GAME OVER', 60, canvas.height/2, colorPink);
+                drawText('Tirez pour rejouer', 20, canvas.height/2 + 40, '#fff');
+            }
+        }
+
+        function update() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            if (gameStarted && !gameOver) {
+                if (keys.left) player.x -= player.speed;
+                if (keys.right) player.x += player.speed;
+                
+                if (player.x < 0) player.x = 0;
+                if (player.x + player.w > canvas.width) player.x = canvas.width - player.w;
+
+                drawPlayer();
+                drawAliens();
+                drawBullets();
+                checkCollisions();
+            } else if (gameStarted && gameOver) {
+                drawPlayer(); // Garde le visuel bloqué
+                drawAliens();
+            } else if (!gameStarted) {
+                drawPlayer();
+                drawAliens();
+            }
+            
+            drawHUD();
+
+            // Overlay "Cliquez pour jouer" si le jeu n'a pas le focus
+            if (!isFocused) {
+                ctx.fillStyle = 'rgba(6, 11, 16, 0.85)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                drawText('CLIQUEZ POUR JOUER', 40, canvas.height/2 - 10, colorYellow);
+                drawText('Q / D : Déplacer   |   Z / ESPACE : Tirer', 20, canvas.height/2 + 30, '#fff');
+                drawText('ESC : Quitter le jeu', 15, canvas.height/2 + 65, colorPink);
+            }
+            
+            requestAnimationFrame(update);
+        }
+
+        function shoot() {
+            if (!gameStarted || gameOver) {
+                gameStarted = true;
+                gameOver = false;
+                score = 0;
+                alienSpeed = 1;
+                initAliens();
+            } else {
+                // Max 3 tirs simultanés à l'écran
+                if (bullets.length < 3) {
+                    bullets.push({ x: player.x + player.w/2 - 2, y: player.y - 10, w: 4, h: 12 });
+                }
+            }
+        }
+
+        // --- CONTRÔLES CLAVIER (Robuste pour AZERTY/QWERTY) ---
+        window.addEventListener('keydown', e => {
+            if (!isFocused) return; // Ignore le clavier si pas cliqué
+            
+            const k = e.key.toLowerCase();
+            
+            if (k === 'q' || k === 'a' || e.key === 'ArrowLeft') keys.left = true;
+            if (k === 'd' || e.key === 'ArrowRight') keys.right = true;
+            if (k === 'z' || k === 'w' || e.key === ' ' || e.key === 'Spacebar') {
+                e.preventDefault(); // Empêche de scroller la page
+                shoot();
+            }
+            if (e.key === 'Escape') {
+                isFocused = false;
+                keys.left = false;
+                keys.right = false;
+            }
+        });
+        window.addEventListener('keyup', e => {
+            if (!isFocused) return;
+            const k = e.key.toLowerCase();
+            if (k === 'q' || k === 'a' || e.key === 'ArrowLeft') keys.left = false;
+            if (k === 'd' || e.key === 'ArrowRight') keys.right = false;
+        });
+
+        // --- CONTRÔLES TACTILES / SOURIS (Mobile friendly) ---
+        const btnL = document.getElementById('btnLeft');
+        const btnR = document.getElementById('btnRight');
+        const btnF = document.getElementById('btnFire');
+
+        const stopPlayer = (e) => { e.preventDefault(); keys.left = false; keys.right = false; };
+        
+        btnL.addEventListener('pointerdown', (e) => { e.preventDefault(); isFocused = true; keys.left = true; });
+        btnL.addEventListener('pointerup', stopPlayer);
+        btnL.addEventListener('pointerleave', stopPlayer);
+
+        btnR.addEventListener('pointerdown', (e) => { e.preventDefault(); isFocused = true; keys.right = true; });
+        btnR.addEventListener('pointerup', stopPlayer);
+        btnR.addEventListener('pointerleave', stopPlayer);
+
+        btnF.addEventListener('pointerdown', (e) => { e.preventDefault(); isFocused = true; shoot(); });
+        
+        canvas.addEventListener('pointerdown', (e) => { e.preventDefault(); isFocused = true; shoot(); }); // Clic sur le canvas
+
+        update(); // Lance la boucle d'affichage
+    }
+
+    // === INITIALISATION GLOBALE ===
     document.addEventListener('DOMContentLoaded', () => {
         initCarousel('carousel-1');
         initCarousel('carousel-2');
+        initSpaceInvaders();
     });
 </script>
+
+</body>
+</html>
 </div>
 </div>
 <div class="btf c7">
